@@ -27,5 +27,9 @@
     "mongoose": "^8.8.0",
     "stripe": "^17.3.1"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
 }
