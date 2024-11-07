@@ -36,9 +36,7 @@ exports.addProduct = async (req, res) => {
 // update products by admin only
 exports.updateProduct = async (req, res) => {
     try {
-        const updateProduct = await Product.findByIdAndUpdate(req.params.id, req.body, {
-            new: true
-        });
+        const updateProduct = await Product.findByIdAndUpdate(req.params.id, req.body, {new: true});
         if (!updateProduct) return res.status(404).json({ message: 'Product not found' });
         res.json(updateProduct);
     } catch (error) {

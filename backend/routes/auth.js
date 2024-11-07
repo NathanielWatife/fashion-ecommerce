@@ -1,13 +1,10 @@
-const express = requrie('express');
+// backend/routes/auth.js
+const express = require('express');
 const router = express.Router();
-const { registerUser, loginUser } = require('../controllers/authController');
+const { registerUser, loginUser } = require('../controllers/authController'); // Ensure correct import path
 
-require.post(
-    '/register',
-    registerUser
-);
+// Define routes
+router.post('/register', registerUser);
+router.post('/login', loginUser);
 
-require.post(
-    '/login'.
-    loginUser
-);
+module.exports = router;

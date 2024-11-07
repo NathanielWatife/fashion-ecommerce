@@ -26,6 +26,18 @@ app.get('/', (req, res) => {
     res.send('API is running...');
 });
 
+// routes for product
+const productRoutes = require('./routes/products');
+app.use('/api/products', productRoutes);
+
+// routes for orders
+const orderRoutes = require('./routes/order');
+app.use('/api/orders', orderRoutes);
+
+// routes for payments
+const paymentRoutes = require('./routes/payment');
+app.use('/api/payment', paymentRoutes);
+
 // authentications routes and product routes
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
