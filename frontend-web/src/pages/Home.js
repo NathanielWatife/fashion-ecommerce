@@ -11,9 +11,9 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(fetchProducts());
-    }, [displatch]);
+    }, [dispatch]);
     if (loading){
-        return <p>Loading...</p>
+        return <p>Loading products...</p>
     }
 
     return (

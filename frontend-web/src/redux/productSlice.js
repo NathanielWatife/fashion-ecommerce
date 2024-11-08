@@ -4,7 +4,7 @@ import api from '../services/api';
 
 // Fetch products from backend API
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-  const response = await api.get('/products');
+  const response = await api.get('/products'); // api endpoint for fetching products
   return response.data;
 });
 
