@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart, clearCart } from '../redux/cartSlice';
-import '../Cart.css';
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -21,7 +20,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="cart-page">
+    <div className="container">
       <h2>Your Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>

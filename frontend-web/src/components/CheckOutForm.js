@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 import api from '../services/api';
 
-const CheckoutForm = ({ totalAmount }) => {
+const CheckOutForm = ({ totalAmount }) => {
   const cartItems = useSelector((state) => state.cart.items); // Fetch cart items
   const stripe = useStripe();
   const elements = useElements();
@@ -68,4 +68,4 @@ const CheckoutForm = ({ totalAmount }) => {
   );
 };
 
-export default CheckoutForm;
+export default CheckOutForm;

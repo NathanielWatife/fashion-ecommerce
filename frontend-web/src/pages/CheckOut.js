@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
-import CheckoutForm from '../components/CheckoutForm';
+import CheckOutForm from '../components/CheckOutForm';
 
 const stripePromise = loadStripe('pk_test_your_publishable_key'); // Replace with your Stripe publishable key
 
@@ -85,7 +85,7 @@ const Checkout = () => {
 
       {/* Stripe Payment Form */}
       <Elements stripe={stripePromise}>
-        <CheckoutForm totalAmount={totalAmount} />
+        <CheckOutForm totalAmount={totalAmount} />
       </Elements>
     </div>
   );

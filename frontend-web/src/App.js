@@ -5,6 +5,8 @@ import ProductDetail from './pages/ProductDetail';  // Rename to ProductDetail f
 import Cart from './pages/Cart';
 import Login from './pages/Login';
 import Checkout from "./pages/CheckOut";
+import OrderConfirmation from "./pages/OrderConfirmation";
+import OrderHistory from "./pages/OrderHistory";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/order-confirmation" element={<OrderConfirmation />} />
+        <Route path="/order-history" element={<OrderHistory />} />
         
       </Routes>
     </Router>
