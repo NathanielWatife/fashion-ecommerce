@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { addToCart } from '../redux/cartSlice';
 import api from '../services/api';
-import '../styles/ProductDetail.css';
+import '../ProductDetail.css';
 
 
 const ProductDetail = () => {

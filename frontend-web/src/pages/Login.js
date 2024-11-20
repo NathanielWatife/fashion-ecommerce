@@ -26,7 +26,7 @@ const Login = () => {
     };
 
     return (
-        <div>
+        <div className="login-page">
             <h2>Login Here</h2>
             <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                 {({ isSubmitting, errors }) => (

@@ -6,12 +6,15 @@ const userSlice = createSlice({
     initialState: { userInfo: null, token: null },
     reducers: {
         setUserInfo: (state, action) => {
-            state.userInfo = null;
-            state.token = action.payload.token;
+            const { user, token } = action.payload;
+            state.userInfo = user;
+            state.token = token;
+            localStorage.setItem('token', token);
         },
         clearUserInfo: (state) => {
             state.userInfo = null;
             state.token = null;
+            localStorage.removeItem('token');
         },
     },
 });

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';  // Rename to ProductDetail for clarity
 import Cart from './pages/Cart';
 import Login from './pages/Login';
+import Checkout from "./pages/CheckOut";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/product/:id" element={<ProductDetail />} /> {/* Updated to ProductDetail */}
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/checkout" element={<Checkout />} />
+        
       </Routes>
     </Router>
   );
